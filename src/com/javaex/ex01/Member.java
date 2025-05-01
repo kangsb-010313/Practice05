@@ -22,6 +22,12 @@ public class Member {
 	
 	
 	//메소드 gs
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return name;
+	}
 	
 	//메소드 일반
 }
