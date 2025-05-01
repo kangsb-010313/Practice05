@@ -16,5 +16,10 @@ public class CConverter {
         return dollar * rate;
     }
     
-
+    public static void showDoller() {
+    	System.out.println("백만원은 " + CConverter.toDoller(1000000) + "달러입니다.");
+    }
+    public static void showWon() {
+    	System.out.println("백달러는 " + CConverter.toKWR(1000000) + "입니다.");
+    }
 }
