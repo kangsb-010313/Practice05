@@ -9,7 +9,6 @@ public class Member {
 	private int point;
 
 	
-	
 	//생성자
 	public Member() {
 		
@@ -29,5 +28,28 @@ public class Member {
 		return name;
 	}
 	
+	public void setPoint(int point) {
+		this.point = point;
+	}
+	public int getPoint() {
+		return point;
+	}
+	
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getIf() {
+		return id;
+	}
+	
+	
 	//메소드 일반
+	public void showInfo() {
+		System.out.println("회원정보: " + name + "(" + id + "), " + point + "점");
+	}
+	
+	
+	
+	
+	
 }
