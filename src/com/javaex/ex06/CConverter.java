@@ -20,6 +20,6 @@ public class CConverter {
     	System.out.println("백만원은 " + CConverter.toDoller(1000000) + "달러입니다.");
     }
     public static void showWon() {
-    	System.out.println("백달러는 " + CConverter.toKWR(1000000) + "입니다.");
+    	System.out.println("백달러는 " + CConverter.toKWR(100) + "입니다.");
     }
 }
