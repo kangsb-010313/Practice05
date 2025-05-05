@@ -11,25 +11,27 @@ public class FriendApp {
         Scanner sc = new Scanner(System.in);
         System.out.println("친구를 3명 등록해 주세요");
 
-        Friend info01 = new Friend();
-        Friend info02 = new Friend();
-        Friend info03 = new Friend();
-
-        friendArray[0]=info01;
-        friendArray[1]=info02;
-        friendArray[2]=info03;
+        Friend fr01 = new Friend();
+        Friend fr02 = new Friend();
+        Friend fr03 = new Friend();
+        
+        friendArray[0] = fr01;
+        friendArray[1] = fr02;
+        friendArray[2] = fr03;
+        
         
         //for문 시작
         //친구정보 3명 입력 로직 --> 반복문 사용
         for(int i=0; i<friendArray.length; i++) {
-            System.out.print("이름: ");
-            String name = sc.nextLine();
-            System.out.print("핸드폰: ");
-            String hp = sc.nextLine();
-            System.out.print("학교: ");
-            String school = sc.nextLine();
-            System.out.println("------------------------------");
+        	System.out.print("이름: ");
+        	friendArray[i].setName(sc.nextLine());
+        	System.out.print("핸드폰: ");
+        	friendArray[i].setHp(sc.nextLine());
+        	System.out.print("학교: ");
+        	friendArray[i].setSchool(sc.nextLine());
+        	System.out.println("-----------------------");
         }
+        
         //for문 끝
         
         
@@ -37,6 +39,7 @@ public class FriendApp {
         for (int i = 0; i < friendArray.length; i++) {
             //친구정보 출력 메소드 호출
         	friendArray[i].showInfo();
+        	
         }
 
         sc.close();
