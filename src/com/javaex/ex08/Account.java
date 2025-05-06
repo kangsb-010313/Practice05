@@ -9,8 +9,9 @@ public class Account {
     public Account() {
     	
     }
-    public Account(String account) {
-    
+    public Account(String accountNo) {
+    	this.accountNo = accountNo;
+		System.out.println(accountNo + " 계좌가 개설되었습니다.");
     }
    
   
@@ -29,14 +30,18 @@ public class Account {
 	}
     
     //메소드 일반
-    public void deposit() {
-    
+    public void deposit(int money) {
+    	balance = balance + money;
     }
-	public void withdraw() {
-    
+	public void withdraw(int money) {
+		if(balance >= money) {
+			balance = balance - money;
+		}else {
+			System.out.println("잔액이 부족합니다.");
+		}
     }
     public void showBalance() {
-
+    	System.out.println(balance);
     }
     
 }

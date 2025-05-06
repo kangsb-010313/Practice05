@@ -7,10 +7,10 @@ public class AccountApp {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
-        boolean run = true;
-        int money;
+        boolean run = true; //실행 역할
+        int money; //입력할 금액
         
-        Account account = new Account("312-89562-123456");
+        Account account = new Account("312-89562-123456"); //개설 계좌
         
         while(run){
             System.out.println("");
@@ -19,14 +19,14 @@ public class AccountApp {
             System.out.println("----------------------------------");
             System.out.print("선택>");
             
-            int menuNo = sc.nextInt();
+            int menuNo = sc.nextInt(); // 업무 선택
             
             switch(menuNo){
             
                 case 1:
                     System.out.print("예금액>");
                     money = sc.nextInt();
-                    account.deposit(money);
+                    account.deposit(money); 
                     break;
                 
                 case 2:
