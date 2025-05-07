@@ -40,6 +40,7 @@ public class Book {
 		this.author = author;
 	}
     
-    
+    //메소드 일반
+	
     
 }
